@@ -38,123 +38,38 @@
   ],
   "services": [
     {
-      "name": "Traditional Balinese Massage",
-      "pricing": "60min - $115, 90min - $155, 120min - $210",
-      "description": "Traditional Balinese healing ritual. Relaxes tension areas using long flowing strokes and pressure point therapy.",
-      "image": "/src/assets/images/services/Traditional-Balinese-Massage.webp",
-      "publicId": "Traditional-Balinese-Massage_ofdcxr"
+      "name": "Sports Physio",
+      "description": "Providing comprehensive, effective and accurate Physiotherapy assessment and treatment for all clients regardless of age or level of sporting achievement."
     },
     {
-      "name": "Glowing Toes",
-      "pricing": "60min - $80",
-      "description": "Indulge in our luxurious Deluxe Spa Manicures or Pedicures, meticulously crafted to nourish and rejuvenate your hands and feet. Our expert technicians will begin with a relaxing soak, followed by a gentle exfoliation and hydrating mask to soothe and smooth your skin. We'll then shape and buff your nails to perfection, and finish with a beautiful polish or buff to add a touch of glamour to your look. Choose from our selection of premium products and scents to customize your treatment and leave feeling pampered and refreshed.",
-      "image": "/src/assets/images/services/Glowing-Toes.webp",
-      "publicId": "Glowing-Toes_dlaz5b"
+      "name": "Sports Rehabilitation",
+      "description": "Sport rehabilitation focuses on understanding, preventing and treating sports and exercise-related injuries and musculoskeletal conditions."
     },
     {
-      "name": "Deep Tissue Massage",
-      "pricing": "60min - $115, 90min - $155, 120min - $230",
-      "description": "Experience the healing power of deep tissue massage at our spa. Our skilled therapists use targeted pressure techniques to relieve tension and tightness in your muscles and connective tissues, promoting the healing of injuries, reducing chronic pain, and improving overall mobility. With a combination of firm pressure and slow strokes, our deep tissue massage will help you let go of stress and achieve deep relaxation. Whether you're looking to recover from an injury, manage chronic pain, or simply unwind after a long day, our deep tissue massage will leave you feeling rejuvenated and refreshed. Book your appointment today and discover the benefits of this transformative therapy.",
-      "image": "/src/assets/images/services/Deep-Tissue-Massage.webp",
-      "publicId": "Deep-Tissue-Massage_wufch1"
+      "name": "Pilates",
+      "description": "Pilates is an incredible tool for pain relief, injury prevention, rehabilitation, strengthening, flexibility, core, posture, symmetry, muscle balance and performance."
     },
     {
-      "name": "Couple Massage",
-      "pricing": "60min - $230 for Two, 90min - $310 for Two, 120min - $460 for Two",
-      "description": "Enhance your spa experience with a significant other. Relax and unwind enjoying your massage side by side.",
-      "image": "/src/assets/images/services/Couple-Massage.webp",
-      "publicId": "Couple-Massage_qhcjph"
+      "name": "ACC Registered Clinic",
+      "description": "Most Sports and musculoskeletal injuries when caused accidentally are covered by ACC insurance legislation in NZ."
     },
     {
-      "name": "Victorian Bali Spa Facial",
-      "pricing": "60min - $120",
-      "description": "Experience the ultimate in relaxation and rejuvenation with our Victorian Facial treatment. Our skilled estheticians use premium products one of America's No 1 Brand IMAGE Skincare and gentle techniques to purify and nourish your skin from within. The one-hour facial comprises a deep cleansing, gentle exfoliation, and luxurious massage of the face, neck, and shoulders. We'll then apply a customized mask for maximum hydration and a flourish of botanical-infused moisture. Unlock radiant and youthful skin with our Victorian 1 hour facial treatment and feel refreshed and revitalized afterward.",
-      "image": "/src/assets/images/services/Victorian-Bali-Spa-Facial.webp",
-      "publicId": "Victorian-Bali-Spa-Facial_dgafqo"
-    },
-    {
-      "name": "Bali Foot Massage",
-      "pricing": "30min - $60, 60min - $115",
-      "description": "Put a Life back in your step with our ultimate treat for feet.",
-      "image": "/src/assets/images/services/Bali-Foot-Massage.webp",
-      "publicId": "Bali-Foot-Massage_ppfxv9"
-    },
-    {
-      "name": "Body Scrub & Massage Package",
-      "pricing": "90min - $165, 120min - $225",
-      "description": "Helps to improve the body oxidation by exfoliating and removing the dead cells from the body lives the body flawless and smooth. Let our professional therapist guide you through different scrub options such as green tea scrub and honey scrub perfect blend for the antioxidants.",
-      "image": "/src/assets/images/services/Body-Scrub-&-Massage-Package.webp",
-      "publicId": "Body-Scrub-_-Massage-Package_i5mdgj"
-    },
-    {
-      "name": "Pregnancy Massage",
-      "pricing": "90min - $165, 120min - $225",
-      "description": "Let our highly trained massage therapists guide you to the style of massage that targets and relieves common tension areas that may arise during pregnancy. Relax, unwind and rejuvenate under their care. Only available from 12 - 36 weeks.",
-      "image": "/src/assets/images/services/Pregnancy-Massage.webp",
-      "publicId": "Pregnancy-Massage_oimp3g"
-    },
-    {
-      "name": "Abhyanga (Ayurvedic Massage)",
-      "pricing": "60min - $135, 75min - $165, 90min - $185",
-      "description": "For thousands of years, massage therapy has been used as a powerful tool in the healing process. The simple gesture of touch has the ability to transform both mental and physical conditions, easing pain and restoring balance to the entire body. The primary aim of this massage is to flush out toxins that accumulate in our bodies due to the stress of everyday living, improper diet, and negative emotions, which can drain us both physically and mentally. Your experienced therapist will use warm medicated oil and specific strokes relevant to your body's constitution.\n\nBenefits of Abhyanga:\n- Promotes circulation and stimulates the lymphatic system.\n- Relieves tightness and stiffness in the body, improving circulation.\n- Moves the lymph, aiding in detoxification.\n- Nourishes the whole body and stimulates internal organs.\n- Improves sleep and promotes relaxation.\n- Eliminates impurities from the body.\n- Delays aging, improves complexion and life span.\n- Rejuvenates.",
-      "image": "/src/assets/images/services/Abhyanga.webp",
-      "publicId": "Abhyanga_xpj8h5"
-    },
-    {
-      "name": "Signature Massage",
-      "pricing": "60min - $115, 90min - $155, 120min - $210",
-      "description": "Using Swedish massage techniques, the Victorian signature massage focuses on holistic relaxation. Long, flowing strokes help relax the body and mind while easing muscle tension and facilitating circulation throughout the body.",
-      "image": "/src/assets/images/services/Signature-Massage.webp",
-      "publicId": "Signature-Massage_qhiysp"
-    },
-    {
-      "name": "Mini Mani or Pedi",
-      "pricing": "30min - $55",
-      "description": "Short on time? Our express mini mani or pedi treatments are the perfect solution for busy individuals who still want to keep their nails looking their best. In just 30 minutes or less, our skilled technicians will file, shape, and buff your nails, pushing back cuticles and applying a beautiful polish of your choice. You'll leave our spa feeling refreshed and polished in no time, ready to take on whatever the day throws your way.",
-      "image": "/src/assets/images/services/Mini-Mani-or-Pedi.webp",
-      "publicId": "Mini-Mani-or-Pedi_n8l0n9"
-    },
-    {
-      "name": "Hot-Stone Massage",
-      "pricing": "60min - $145, 90min - $190",
-      "description": "Heated volcanic stones glide over the body, melting away unwanted tension guiding you to a deep state of relaxation.",
-      "image": "/src/assets/images/services/Hot-Stone-Massage.webp",
-      "publicId": "Hot-Stone-Massage_ctzod3"
-    },
-    {
-      "name": "Express Facial - Image Skin Care",
-      "pricing": "30min - $70",
-      "description": "Unwind with our express facial treatments with America's No 1 Brand IMAGE Skincare, perfect for those with a busy schedule. Our experienced estheticians will gently cleanse and exfoliate your skin, followed by a relaxing massage of the face and neck. We'll then apply a hydrating mask and moisturizer, leaving your skin refreshed and revitalized in just 30 minutes. Whether you're looking to rejuvenate your skin for a special occasion or just need a quick pick-me-up after a long day, our express facial treatment is the perfect solution.",
-      "image": "/src/assets/images/services/Express-Facial.webp",
-      "publicId": "Express-Facial_trtven"
-    },
-    {
-      "name": "Romantic Spa Package",
-      "description": "Escape to a world of romance, relaxation, and luxury with our Romantic Spa Package. Treat yourself and your significant other to an unforgettable spa experience that begins with a private, candlelit couple's massage, with customized pressure and therapeutic techniques tailored to your needs. Savor a glass of champagne as we pamper you with our mini spa mani OR pedi treatments to beautify and revitalize your hands and feet. Finally, indulge in an exclusive Express facial treatment using high-quality, nourishing skincare products that will leave your skin refreshed and glowing. Our Romantic Spa Package is designed to delight the senses and rejuvenate your mind, body, and soul",
-      "pricing": "120min - $450 for Two",
-      "image": "/src/assets/images/services/Romantic-Spa-Package.webp",
-      "publicId": "Romantic-Spa-Package_iybugt"
-    },
-    {
-      "name": "Victoria's Exclusive Package",
-      "pricing": "180min - $299",
-      "description": "Treat yourself to our most indulgent spa package yet, Victoria's Exclusive Package. The ultimate in relaxation, this 3-hour spa experience begins with our signature Victorian Facial, re-hydrating & nourishing to restore a youthful appearance to tired skin. From there, you will receive the luxurious and soothing one-hour deep tissue massage. We then invite you to experience our deluxe spa mani OR pedi treatment, where our expert technicians will file, shape, and buff your nails, pushing back cuticles and applying a beautiful polish of your choice. Additionally, we'll pamper your hands and feet with an invigorating sugar scrub and deep moisturizing mask for some serious TLC. Complimentary wine and chocolates included to make your experience even more memorable.",
-      "image": "/src/assets/images/services/Victoria's-Exclusive-Package.webp",
-      "publicId": "Victoria_s-Exclusive-Package_spquhb"
+      "name": "Sports Massage",
+      "description": "Regular sports massage will speed recovery, condition and prepare muscles, free up stiff joints and tight muscles, help prevent injuries and increase movement, flexibility and joint range of movement."
     }
   ],
   "reviews": [
     {
-      "name": "Solana Rivas",
-      "review": "Had the pleasure of seeing Loli at Bali Spa on a short trip to Auckland last week. I got two massages in three days! It was incredible. Highly recommend!"
+      "name": "Nui N Scott McGregor",
+      "review": "Tanya has been my physio for the last 6-7 years. She is brilliant. She not only treats my injury, but also works on my strength and flexibility to prevent further injuries. Tanya is friendly, professional and she cares about her patients. Some of my friends and colleagues now use her also, and spoke very highly of their time with her."
     },
     {
-      "name": "Kathryn Rountree",
-      "review": "Had a wonderful massage at Victorian Bali Spa yesterday and have already booked the next - many thanks!"
+      "name": "Aakash Virdi",
+      "review": "Very positive experience from first contact. Tanya was very knowledgeable and gentle. Felt like I saw improvement with my mid back pain after only one day of exercises. Such an immediate relief all because she get to the root cause and fixed it."
     },
     {
-      "name": "Tanya Dunstan",
-      "review": "I booked a surprise mother daughter pamper pair treatment 🥂 with foot massage and facial and it was amazing. The best customer service and best back massage ever.  1,000 thank yous!"
+      "name": "Anne Bray",
+      "review": "Tanya has been fantastic, she is personable and professional. She has used a variety of techniques to help me recover from knee surgery."
     }
   ]
 }
