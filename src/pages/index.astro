@@ -4,7 +4,11 @@ import logoImg from "@assets/images/logo.jpeg";
 import hero1Img from "@assets/images/hero1.jpeg";
 import hero2Img from "@assets/images/hero2.jpeg";
 import hero3Img from "@assets/images/hero3.jpeg";
+import basketballPatternImg from "@assets/images/basketballPattern.png";
 import { Image } from "astro:assets";
+
+import tanya1Img from "@assets/images/tanya1.jpeg";
+import tanya2Img from "@assets/images/tanya2.jpeg";
 
 import config from "@data/config.json";
 ---
@@ -31,9 +35,8 @@ import config from "@data/config.json";
           href={config.bookingLink}
           class="btn btn-primary font-extrabold btn-lg">Book Now</a
         >
-        <a
-          href={config.bookingLink}
-          class="btn btn-secondary font-extrabold btn-lg">Contact Now</a
+        <a href="#contact" class="btn btn-secondary font-extrabold btn-lg"
+          >Contact Now</a
         >
       </div>
     </div>
@@ -53,6 +56,51 @@ import config from "@data/config.json";
       class="object-cover absolute h-full w-full grayscale-[0.7]"
     />
   </section>
+  <section class="bg-primary py-16 px-2" id="about">
+    <div class="max-w-screen-xl mx-auto flex flex-col gap-16 max-md:gap-8">
+      <div class="flex flex-col gap-8">
+        <div class="flex">
+          <h1 class="text-white font-extrabold text-8xl">Meet Tanya Browne</h1>
+          <div
+            id="basketball"
+            class="rounded-full bg-amber-600 w-full max-w-52 aspect-square relative overflow-hidden mx-auto"
+          >
+            <Image
+              src={basketballPatternImg}
+              id="basketballPattern"
+              alt="basketball pattern"
+              class="w-[200%] max-w-none absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+        </div>
+
+        <p
+          class="italic text-xl font-light text-secondary max-w-2xl whitespace-pre-line"
+        >
+          {config.credentials}
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-2 grid-rows-2 max-md:grid-cols-1 max-md:grid-rows-4 gap-8 place-items-center"
+      >
+        <p class="text-white text-2xl font-light">{config.description1}</p>
+        <Image
+          src={tanya1Img}
+          alt="tanya"
+          class="rounded-2xl w-96 border-[16px] border-secondary max-md:row-start-1"
+        />
+        <Image
+          src={tanya2Img}
+          alt="tanya"
+          class="rounded-2xl w-96 border-[16px] border-secondary"
+        />
+        <p class="text-white text-2xl font-light text-right max-md:text-left">
+          {config.description2}
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <script>
@@ -62,14 +110,59 @@ import config from "@data/config.json";
 
   const heroBGTimeline = gsap.timeline({
     yoyo: true,
-    repeatDelay: 5,
+    repeatDelay: 3,
+    delay: 3,
     repeat: -1,
   });
 
   heroBGTimeline.to(".heroImg", {
     opacity: 0,
     duration: 2,
-    delay: 5,
-    stagger: 5,
+    stagger: 6,
   });
+
+  const basketballTimline = gsap.timeline();
+  basketballTimline
+    .fromTo(
+      "#basketball",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top center",
+          end: "top center",
+          scrub: true,
+        },
+      }
+    )
+    .fromTo(
+      "#basketball",
+      { translateY: "-150%" },
+      {
+        translateY: "150%",
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+      }
+    )
+    .fromTo(
+      "#basketballPattern",
+      { translateY: "-10%" },
+      {
+        translateY: "20%",
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+      },
+      "0"
+    );
 </script>
