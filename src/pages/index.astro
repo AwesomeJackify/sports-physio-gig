@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+import logoImg from "@assets/images/logo.jpeg";
+import hero1Img from "@assets/images/hero1.jpeg";
+import hero2Img from "@assets/images/hero2.jpeg";
+import hero3Img from "@assets/images/hero3.jpeg";
+import { Image } from "astro:assets";
+
+import config from "@data/config.json";
+---
+
+<Layout title={config.businessName}>
+  <section class="h-screen w-full relative overflow-hidden">
+    <div
+      class="flex flex-col w-full items-center absolute top-1/2 -translate-y-[50%] gap-16 left-1/2 -translate-x-1/2 z-30"
+    >
+      <Image src={logoImg} alt="logo" class="rounded-2xl w-64 max-md:w-44" />
+      <div class="relative">
+        <h1
+          class="text-8xl uppercase text-center font-extrabold text-primary max-md:my-4"
+        >
+          {config.businessName}
+        </h1>
+        <div
+          class="w-[105%] left-1/2 -translate-x-1/2 h-1/2 bg-secondary absolute bottom-0 -z-10 max-md:h-full max-md:w-full"
+        >
+        </div>
+      </div>
+      <div class="flex gap-8">
+        <a
+          href={config.bookingLink}
+          class="btn btn-primary font-extrabold btn-lg">Book Now</a
+        >
+        <a
+          href={config.bookingLink}
+          class="btn btn-secondary font-extrabold btn-lg">Contact Now</a
+        >
+      </div>
+    </div>
+    <Image
+      src={hero1Img}
+      alt="hero img"
+      class="heroImg object-cover absolute h-full w-full grayscale-[0.7] z-20"
+    />
+    <Image
+      src={hero2Img}
+      alt="hero img"
+      class="heroImg object-cover absolute h-full w-full grayscale-[0.7] z-10"
+    />
+    <Image
+      src={hero3Img}
+      alt="hero img"
+      class="object-cover absolute h-full w-full grayscale-[0.7]"
+    />
+  </section>
+</Layout>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+  const heroBGTimeline = gsap.timeline({
+    yoyo: true,
+    repeatDelay: 5,
+    repeat: -1,
+  });
+
+  heroBGTimeline.to(".heroImg", {
+    opacity: 0,
+    duration: 2,
+    delay: 5,
+    stagger: 5,
+  });
+</script>
