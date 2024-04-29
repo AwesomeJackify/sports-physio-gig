@@ -71,7 +71,7 @@ import config from "@data/config.json";
       class="object-cover absolute h-full w-full grayscale-[0.7]"
     />
   </section>
-  <section class="bg-primary py-16 px-2" id="about">
+  <section class="bg-primary py-16 px-4" id="about">
     <div class="max-w-screen-xl mx-auto flex flex-col gap-16 max-md:gap-8">
       <div class="flex flex-col gap-8">
         <div class="flex relative">
@@ -116,7 +116,7 @@ import config from "@data/config.json";
       </div>
     </div>
   </section>
-  <section class="max-w-screen-xl mx-auto flex flex-col gap-16 py-16 px-2">
+  <section class="max-w-screen-xl mx-auto flex flex-col gap-16 py-16 px-4">
     <h1 class="text-primary text-8xl font-extrabold">My Services</h1>
     <div class="flex flex-col gap-8">
       {
@@ -147,11 +147,90 @@ import config from "@data/config.json";
       }
     </div>
   </section>
+  <section>
+    <div
+      class="grid grid-cols-2 grid-rows-1 max-md:grid-cols-1 max-md:grid-rows-2 bg-primary"
+    >
+      <div
+        class="flex flex-col gap-4 max-md:p-8 p-16 bg-primary items-center justify-center text-white max-w-2xl mx-auto"
+      >
+        <h1 class="text-center font-extrabold text-9xl">Find Me Here</h1>
+        <h2 class="text-center text-4xl">{config.address}</h2>
+      </div>
+      <div id="map" class="h-full w-full"></div>
+    </div>
+  </section>
+  <section
+    id="contact"
+    class="flex flex-col gap-16 py-16 max-w-screen-lg mx-auto px-2"
+  >
+    <h1 class="text-9xl uppercase font-extrabold text-center text-primary">
+      Contact Me
+    </h1>
+    <div class="flex flex-col gap-5 items-center">
+      <p class="text-center italic text-2xl">
+        via my phone number: <span
+          ><a
+            class="link link-secondary"
+            href={config.socials.filter((social) => social.name == "phone")[0]
+              .url}
+          >
+            {
+              config.socials
+                .filter((social) => social.name == "phone")[0]
+                .url.split("+64")[1]
+            }</a
+          ></span
+        >
+      </p>
+      <p class="text-center text-2xl italic">or via the form below</p>
+    </div>
+
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      class="bg-primary p-8 rounded-2xl py-12 flex flex-col gap-2"
+    >
+      <label for="fname" class="text-white">First name</label>
+      <input
+        autocomplete="on"
+        type="text"
+        id="fname"
+        class="form-input px-4 py-3 w-full rounded bg-stone-100"
+      />
+      <label for="lname" class="text-white">Last name</label>
+      <input
+        autocomplete="on"
+        type="text"
+        id="lname"
+        class="form-input px-4 py-3 w-full rounded bg-stone-100"
+      />
+      <label for="email" class="text-white">Email</label>
+      <input
+        autocomplete="on"
+        type="email"
+        id="email"
+        class="form-input px-4 py-3 w-full rounded bg-stone-100"
+      />
+      <label for="message" class="text-white">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        class="form-input px-4 py-3 rounded w-full bg-stone-100"
+        cols="30"
+        rows="10"></textarea>
+      <div class="flex w-full justify-center my-6">
+        <input type="submit" value="Submit" class="btn btn-secondary" />
+      </div>
+    </form>
+  </section>
 </Layout>
 
 <script>
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
+
   gsap.registerPlugin(ScrollTrigger);
 
   const heroBGTimeline = gsap.timeline({
@@ -211,4 +290,17 @@ import config from "@data/config.json";
       },
       "0"
     );
+
+  // @ts-ignore
+  var map = L.map("map").setView([-36.854944535768496, 174.78057108465723], 18);
+  // @ts-ignore
+  L.marker([-36.854944535768496, 174.78057108465723]).addTo(map);
+
+  // @ts-ignore
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    minZoom: 16,
+    attribution:
+      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map);
 </script>
