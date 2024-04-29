@@ -168,6 +168,61 @@ import config from "@data/config.json";
       <div id="map" class="h-full w-full"></div>
     </div>
   </section>
+  <section id="fees" class="py-16 px-4 flex flex-col gap-16">
+    <h1 class="text-center text-9xl font-extrabold uppercase text-primary">
+      My Rates
+    </h1>
+    <div
+      class="grid grid-cols-2 max-md:grid-cols-1 grid-rows-1 max-md:grid-rows-2 max-w-screen-xl mx-auto gap-16 max-md:gap-8"
+    >
+      {
+        config.fees.map((fee) => (
+          <div class="flex flex-col gap-8 rounded-2xl p-8 border-2 border-primary">
+            <h1 class="text-xl font-bold ">{fee.name}</h1>
+            <div class="flex flex-col gap-8">
+              {fee.details.map((detail) => (
+                <div>
+                  <h1 class="text-base">
+                    {detail.appointmentType} ({detail.duration})
+                  </h1>
+                  <h1 class="flex items-end mb-2">
+                    <span class="font-bold text-4xl text-primary">
+                      {detail.fullRate}
+                    </span>
+                    (Full Rate)
+                  </h1>
+                  <h1 class="flex items-end">
+                    <span class="font-bold text-4xl text-primary">
+                      {detail.discountedRate}
+                    </span>
+                    (Discounted Rate)
+                  </h1>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <p class="italic font-light max-w-screen-sm mx-auto text-center">
+      *Discounted Fees are available to ensure equitable access to Physiotherapy
+      Services. Please enquire if you are a student, beneficiary or have a lower
+      income to access these reduced fees. Affordable fees can be discussed to
+      meet your injury needs.
+    </p>
+    <div
+      class="grid grid-cols-2 max-md:grid-cols-1 max-w-screen-xl mx-auto gap-16 max-md:gap-8"
+    >
+      {
+        config.generalInfo.map((generalInfo) => (
+          <div class="flex flex-col gap-8 rounded-2xl p-8 border-2 border-primary">
+            <h1 class="text-2xl font-bold ">{generalInfo.name}</h1>
+            <p class="font-light text-sm">{generalInfo.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
   <section
     id="contact"
     class="flex flex-col gap-16 py-16 max-w-screen-lg mx-auto px-2"

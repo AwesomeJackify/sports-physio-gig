@@ -19,8 +19,30 @@
       "url": "#services"
     },
     {
+      "name": "Pricing",
+      "url": "#fees"
+    },
+    {
       "name": "Contact",
       "url": "#contact"
+    }
+  ],
+  "generalInfo": [
+    {
+      "name": "ACC Coverage",
+      "description": "ACC covers injuries sustained following accidental trauma or load, and Claims can be lodged at the clinic by the Physiotherapist. Apply to all services for Non-Accidental injuries, Massage, and Pilates."
+    },
+    {
+      "name": "Accelerated Care Pathways",
+      "description": "Sports Physio (NZ) Ltd is a contracted supplier under the Careway programme. Several injury types and certain conditions are able to be cared for under an Accelerated care pathway, with no ACC surcharge. ACC has identified key injuries that require an Interdisciplinary approach, with typically longer periods of care with higher frequency of Physiotherapy appointments required for full recovery. Examples include: Knee ACL injuries, some Ankle ligament injuries, certain cervical spine, lumbar spine and shoulder injuries. Please enquire if your injury might be covered under this scheme."
+    },
+    {
+      "name": "Southern Cross Easy Claim",
+      "description": "Sports Physio (NZ) Ltd is a contracted supplier under the Southern Cross Easy Claim programme. Just let your physio know if you have a Southern Cross policy covering Physiotherapy and we can invoice your insurer directly."
+    },
+    {
+      "name": "Other Insurers",
+      "description": "We supply high quality Physiotherapy services for all healthcare suppliers. Typically we supply a receipt and you lodge for reimbursement with your Insurer."
     }
   ],
   "socials": [
@@ -55,6 +77,42 @@
     {
       "name": "Sports Massage",
       "description": "Regular sports massage will speed recovery, condition and prepare muscles, free up stiff joints and tight muscles, help prevent injuries and increase movement, flexibility and joint range of movement."
+    }
+  ],
+  "fees": [
+    {
+      "name": "ACC Surcharge",
+      "details": [
+        {
+          "appointmentType": "Initial Appointment",
+          "duration": "60 minutes",
+          "fullRate": "$70",
+          "discountedRate": "$45"
+        },
+        {
+          "appointmentType": "Follow up Appointment",
+          "duration": "30 minutes",
+          "fullRate": "$45",
+          "discountedRate": "$30"
+        }
+      ]
+    },
+    {
+      "name": "Private Fees",
+      "details": [
+        {
+          "appointmentType": "Initial Appointment",
+          "duration": "60 minutes",
+          "fullRate": "$125",
+          "discountedRate": "$90"
+        },
+        {
+          "appointmentType": "Follow up Appointment",
+          "duration": "30 minutes",
+          "fullRate": "$75",
+          "discountedRate": "$65"
+        }
+      ]
     }
   ],
   "reviews": [
