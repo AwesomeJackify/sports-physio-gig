@@ -8,11 +8,19 @@
   "pages": [
     {
       "name": "Home",
-      "url": "/"
+      "url": "#"
+    },
+    {
+      "name": "About Me",
+      "url": "#about"
     },
     {
       "name": "Services",
       "url": "#services"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
     }
   ],
   "socials": [
