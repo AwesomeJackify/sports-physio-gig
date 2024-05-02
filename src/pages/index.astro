@@ -36,11 +36,16 @@ import config from "@data/config.json";
       class="flex flex-col w-full items-center absolute top-1/2 -translate-y-[50%] gap-16 left-1/2 -translate-x-1/2 z-30"
     >
       <Image src={logoImg} alt="logo" class="rounded-2xl w-64 max-md:w-44" />
-      <div class="relative">
+      <div class="relative md:mb-16">
         <h1
           class="heroText text-8xl uppercase text-center font-extrabold text-primary max-md:my-4"
         >
-          {config.businessName}
+          Sports Physio
+        </h1>
+        <h1
+          class="heroText text-6xl uppercase absolute right-0 top-full text-center font-extrabold max-md:my-4 text-primary -z-10 max-md:static max-md:text-2xl"
+        >
+          NZ Ltd
         </h1>
         <div
           class="heroText w-[105%] left-1/2 -translate-x-1/2 h-1/2 bg-secondary absolute bottom-0 -z-10 max-md:h-full max-md:w-full"
@@ -62,17 +67,17 @@ import config from "@data/config.json";
       <Image
         src={hero1Img}
         alt="hero img"
-        class="heroImg object-cover absolute h-full w-full grayscale-[0.7] z-20"
+        class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-20"
       />
       <Image
         src={hero2Img}
         alt="hero img"
-        class="heroImg object-cover absolute h-full w-full grayscale-[0.7] z-10"
+        class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-10"
       />
       <Image
         src={hero3Img}
         alt="hero img"
-        class="object-cover absolute h-full w-full grayscale-[0.7]"
+        class="object-cover absolute h-full w-full grayscale-[0.5]"
       />
     </div>
   </section>
