@@ -14,7 +14,9 @@ const Nav = () => {
         <ul className="menu menu-horizontal ml-auto px-1">
           {config.pages.slice(1).map((page) => (
             <li key={page.name}>
-              <a href={page.url}>{page.name}</a>
+              <a href={page.url} className="hover:text-primary">
+                {page.name}
+              </a>
             </li>
           ))}
         </ul>
