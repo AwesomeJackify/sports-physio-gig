@@ -23,6 +23,10 @@
       "url": "#fees"
     },
     {
+      "name": "FAQ",
+      "url": "#faq"
+    },
+    {
       "name": "Contact",
       "url": "#contact"
     }
@@ -113,6 +117,52 @@
           "discountedRate": "$65"
         }
       ]
+    }
+  ],
+  "faqs": [
+    {
+      "name": "Do I need a doctor’s referral to see a physiotherapist?",
+      "description": "No. You can self-refer to physiotherapy without a doctor’s referral. Physiotherapists in NZ are primary care practitioners who can lodge ACC claims, refer for radiology, and refer you to GPs, specialists, or other healthcare providers."
+    },
+    {
+      "name": "Is Sports Physio (NZ) Ltd ACC registered?",
+      "description": "Yes. Sports Physio (NZ) Ltd is an ACC registered provider."
+    },
+    {
+      "name": "Do you help with private or non-insurance injuries?",
+      "description": "Yes. We also treat private and non-insurance-covered musculoskeletal concerns and injuries."
+    },
+    {
+      "name": "Do you treat more than just sports injuries?",
+      "description": "Yes. We assess and treat all injuries including accidents, strains, sprains, painful conditions, headaches, postural issues, occupational injuries, and overuse concerns."
+    },
+    {
+      "name": "Do you accept healthcare insurance?",
+      "description": "Yes. We provide physiotherapy services under all healthcare insurance providers, provided your policy includes physiotherapy coverage."
+    },
+    {
+      "name": "Can you invoice Southern Cross directly?",
+      "description": "Yes. Sports Physio (NZ) Ltd is a Southern Cross Easy-Claim provider. If your policy includes cover for physiotherapy, we can invoice Southern Cross directly."
+    },
+    {
+      "name": "What is the ICPMSK programme and are you registered?",
+      "description": "Yes. Tanya Browne, Principal Physiotherapist, is an ICPMSK registered provider. Some complex injuries may qualify for no-fee physiotherapy under the ACC ICPMSK programme. We are also registered under the Careway programme."
+    },
+    {
+      "name": "Where are your clinics located?",
+      "description": "Our main clinic is located in Parnell: The Convent, Level 1 Suite 4, 218 Parnell Rd, Auckland 1052. We also offer services in Waitakere (by arrangement), home visits, workplace visits, and support for sports teams and events."
+    },
+    {
+      "name": "What are your professional fees?",
+      "description": "Fees vary based on insurance coverage, appointment length, and eligibility for discounts. Please visit www.sportsphysio.co.nz for full details. We offer discounts for students, beneficiaries, and to support equitable healthcare access."
+    },
+    {
+      "name": "Who is the physiotherapist and what is her experience?",
+      "description": "Tanya Browne, Principal Physiotherapist, holds a BHSc in Physiotherapy (1998) and a Postgraduate Diploma in Sports Medicine (2012, with distinction). With over 27 years of experience, Tanya is known for her empathetic care, effective diagnosis, evidence-informed treatment, and 'magic hands'."
+    },
+    {
+      "name": "What other services do you offer?",
+      "description": "We offer Pilates, sports taping, taping workshops, physio sports massage, acupuncture/dry needling, occupational health services, World Rugby medical education, and physiotherapy for sports events and teams."
     }
   ],
   "reviews": [
