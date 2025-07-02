@@ -31,6 +31,32 @@ import config from "@data/config.json";
 ---
 
 <Layout title={config.businessName}>
+  <div
+    role="alert"
+    class="alert alert-info absolute top-0 left-0 z-50 w-1/2 max-md:w-full"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      class="h-6 w-6 shrink-0 stroke-current"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+    </svg>
+    <span
+      >⚠️ Tanya is currently away at the Pacific Mini Games as Physio / Head of
+      Medical Services for Team Cook Islands. Telehealth available — Auckland
+      clinic bookings resume from <strong>14 July 2025</strong>. Contact via
+      email only: <a
+        class="link link-hover"
+        href="mailto:Tanya.browne42@gmail.com">Tanya.browne42@gmail.com</a
+      ></span
+    >
+  </div>
   <section class="h-screen w-full relative overflow-hidden z-10">
     <div
       class="flex flex-col w-full items-center absolute top-1/2 -translate-y-[50%] gap-16 left-1/2 -translate-x-1/2 z-30"
@@ -236,7 +262,9 @@ import config from "@data/config.json";
     </div>
   </section>
   <section id="faq" class="py-16 px-4 flex flex-col gap-16">
-    <h1 class="text-center text-9xl font-extrabold uppercase text-primary">
+    <h1
+      class="text-center text-9xl font-extrabold uppercase text-primary max-md:text-6xl"
+    >
       Frequently Asked Questions
     </h1>
     <div class="flex flex-col gap-2">
