@@ -8,27 +8,27 @@
   "pages": [
     {
       "name": "Home",
-      "url": "#"
+      "url": "/"
     },
     {
       "name": "About Me",
-      "url": "#about"
+      "url": "/#about"
     },
     {
       "name": "Services",
-      "url": "#services"
+      "url": "/#services"
     },
     {
       "name": "Pricing",
-      "url": "#fees"
+      "url": "/#fees"
     },
     {
       "name": "FAQ",
-      "url": "#faq"
+      "url": "/#faq"
     },
     {
       "name": "Contact",
-      "url": "#contact"
+      "url": "/#contact"
     }
   ],
   "generalInfo": [

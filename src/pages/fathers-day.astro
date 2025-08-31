@@ -1,0 +1,144 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import logoImg from "@assets/images/logo.jpeg";
+import hero1Img from "@assets/images/hero1.png";
+import hero2Img from "@assets/images/hero2.jpeg";
+import hero3Img from "@assets/images/hero3.jpeg";
+import basketballPatternImg from "@assets/images/basketballPattern.png";
+import runningManGif from "@assets/images/runningMan.gif";
+import runningManStillImg from "@assets/images/runningMan.png";
+
+import service1Img from "@assets/images/services/service1.jpeg";
+import service2Img from "@assets/images/services/service2.jpeg";
+import service3Img from "@assets/images/services/service3.jpeg";
+import service4Img from "@assets/images/services/service4.jpeg";
+import service5Img from "@assets/images/services/service5.jpeg";
+
+const serviceImgs = [
+  service1Img,
+  service2Img,
+  service3Img,
+  service4Img,
+  service5Img,
+];
+
+import tanya1Img from "@assets/images/tanya1.jpg";
+import tanya2Img from "@assets/images/tanya2.jpeg";
+
+import config from "@data/config.json";
+
+const business = {
+  title: "Father’s Day Specials!!",
+  blurb: "Here are some fantastic gift ideas from Sports Physio (NZ) Ltd.",
+  vouchersAvailable: true,
+};
+
+const offers = [
+  {
+    id: 1,
+    title: "Physio Consultation",
+    description:
+      "All injuries, aches and pains, rehab, exercise prescription and advice.",
+    duration: "60 minutes",
+    price: 75,
+  },
+  {
+    id: 2,
+    title: "Physio Concession Card",
+    description: "10 physio sessions",
+    duration: "30 mins per session",
+    price: 250,
+    badge: "Great for Sporty Dads!",
+  },
+  {
+    id: 3,
+    title: "Pilates with Physio",
+    variants: [
+      { label: "Individual", duration: "60 mins", price: 75 },
+      { label: "10 Class Concession", duration: null, price: 450 },
+    ],
+  },
+  {
+    id: 4,
+    title: "Sports Massage",
+    duration: "60 mins",
+    price: 75,
+  },
+  {
+    id: 5,
+    title: "Rehab Package",
+    includes: [
+      "Massage ball",
+      "Wheat Bag or Ice n Ezy",
+      "EAB 75mm",
+      "Rigid 38mm",
+      "Kinesio Tape 5m",
+    ],
+    price: 60,
+  },
+];
+---
+
+<Layout title={config.businessName}>
+  <section class="px-4 pb-16">
+    <h1
+      class="text-8xl font-extrabold my-64 max-md:my-32 text-center text-primary"
+    >
+      Father's Day Special
+    </h1>
+    <p class="text-center text-slate-600 mb-10">{business.blurb}</p>
+    {
+      business.vouchersAvailable && (
+        <p class="text-center text-primary font-semibold mb-12">
+          Gift Vouchers Available
+        </p>
+      )
+    }
+
+    <div class="grid gap-8 md:grid-cols-2 max-w-screen-xl mx-auto">
+      {
+        offers.map((offer) => (
+          <div class="p-6 rounded-2xl bg-white shadow ring-1 ring-slate-200">
+            <h2 class="text-xl font-bold mb-2">{offer.title}</h2>
+            {offer.description && (
+              <p class="text-slate-600 mb-2">{offer.description}</p>
+            )}
+            {offer.duration && (
+              <p class="text-sm text-slate-500">{offer.duration}</p>
+            )}
+            {offer.badge && (
+              <span class="inline-block mt-2 text-sm text-primary-content font-semibold bg-primary px-2 py-1 rounded">
+                {offer.badge}
+              </span>
+            )}
+            {offer.variants && (
+              <ul class="mt-3 space-y-1">
+                {offer.variants.map((v) => (
+                  <li class="text-slate-700">
+                    {v.label}{" "}
+                    {v.duration && (
+                      <span class="text-slate-500">({v.duration})</span>
+                    )}{" "}
+                    – <span class="font-semibold">${v.price}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {offer.includes && (
+              <ul class="mt-3 list-disc list-inside text-slate-600 space-y-1">
+                {offer.includes.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            )}
+            {!offer.variants && (
+              <p class="mt-3 font-semibold text-lg">${offer.price}</p>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

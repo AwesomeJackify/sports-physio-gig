@@ -5,6 +5,8 @@ import logoImg from "@assets/images/logo.jpeg";
 
 import config from "@data/config.json";
 
+const isHome = window.location.pathname === "/";
+
 const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
@@ -12,7 +14,7 @@ const Nav = () => {
     <div>
       <nav className="navbar absolute left-0 top-0 z-20 bg-base-100 bg-transparent max-md:hidden">
         <ul className="menu menu-horizontal ml-auto px-1">
-          {config.pages.slice(1).map((page) => (
+          {config.pages.slice(isHome ? 1 : 0).map((page) => (
             <li key={page.name}>
               <a href={page.url} className="hover:text-primary">
                 {page.name}
