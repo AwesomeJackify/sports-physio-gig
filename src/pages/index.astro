@@ -3,12 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 
 import logoImg from "@assets/images/logo.jpeg";
-import hero1Img from "@assets/images/hero1.png";
-import hero2Img from "@assets/images/hero2.jpeg";
-import hero3Img from "@assets/images/hero3.jpeg";
+import hero1Img from "@assets/images/hero/hero1.jpg";
+import hero2Img from "@assets/images/hero/hero2.jpg";
+import hero3Img from "@assets/images/hero/hero3.jpg";
+import hero4Img from "@assets/images/hero/hero4.jpg";
 import basketballPatternImg from "@assets/images/basketballPattern.png";
-import runningManGif from "@assets/images/runningMan.gif";
-import runningManStillImg from "@assets/images/runningMan.png";
 
 import service1Img from "@assets/images/services/service1.jpeg";
 import service2Img from "@assets/images/services/service2.jpeg";
@@ -89,17 +88,22 @@ import config from "@data/config.json";
       <Image
         src={hero1Img}
         alt="hero img"
-        class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-20"
+        class="heroImg object-cover absolute h-full w-full grayscale-[0.2] z-20"
       />
       <Image
         src={hero2Img}
         alt="hero img"
-        class="heroImg object-cover absolute h-full w-full grayscale-[0.5] z-10"
+        class="heroImg object-cover absolute h-full w-full grayscale-[0.2] z-10"
       />
       <Image
         src={hero3Img}
         alt="hero img"
-        class="object-cover absolute h-full w-full grayscale-[0.5]"
+        class="object-cover absolute h-full w-full grayscale-[0.2]"
+      />
+      <Image
+        src={hero4Img}
+        alt="hero img"
+        class="object-cover absolute h-full w-full grayscale-[0.2]"
       />
     </div>
   </section>
