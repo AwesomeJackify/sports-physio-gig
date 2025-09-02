@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import config from "@data/config.json";
+
+const special = {
+  title: "Sports Physio (NZ) Ltd Winter Special Offer",
+  intro: [
+    "Kia Ora Everyone!",
+    "Hope this cheers up your Winter Blues!",
+    "Seems like everyone is a bit sick, over it, overseas or can't afford to come to physio at the moment!",
+    "Things are a bit tough out there so let me help you all out!",
+  ],
+  message:
+    "Affordable equitable access to Healthcare is important. Sports Physio NZ Ltd is happy to offer fees ranging from $0 to ensure you get into the clinic if you need physio. Please don't hesitate to Book in if you need Physio help!",
+  offer: {
+    season: "Winter 2025 Special",
+    items: [
+      { title: "Physio Initial ACC Consultation", details: "No charge." },
+      { title: "Follow up fees", details: "Discounted rates available!" },
+    ],
+    booking: "Book Online www.sportsphysio.co.nz",
+  },
+};
+---
+
+<Layout title={config.businessName}>
+  <section class="px-4 pb-16">
+    <h1
+      class="text-7xl font-extrabold my-32 max-md:my-20 text-center text-primary"
+    >
+      {special.title}
+    </h1>
+
+    <div class="max-w-3xl mx-auto space-y-4 text-center text-slate-700">
+      {special.intro.map((line) => <p>{line}</p>)}
+      <p class="font-medium mt-6">{special.message}</p>
+    </div>
+
+    <div
+      class="max-w-2xl mx-auto mt-12 p-6 rounded-2xl bg-white shadow ring-1 ring-slate-200"
+    >
+      <h2 class="text-2xl font-bold text-center mb-6">
+        {special.offer.season}
+      </h2>
+      <ul class="space-y-4">
+        {
+          special.offer.items.map((item) => (
+            <li>
+              <h3 class="text-lg font-semibold">{item.title}</h3>
+              <p class="text-slate-600">{item.details}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-6 text-center font-semibold text-primary">
+        {special.offer.booking}
+      </p>
+    </div>
+  </section>
+</Layout>

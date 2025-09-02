@@ -27,6 +27,10 @@
       "url": "/#faq"
     },
     {
+      "name": "Hot Tips",
+      "url": "/hot-tips"
+    },
+    {
       "name": "Contact",
       "url": "/#contact"
     }
