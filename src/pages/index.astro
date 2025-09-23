@@ -191,6 +191,13 @@ import config from "@data/config.json";
         <h2 class="text-center text-4xl">{config.address}</h2>
       </div>
       <div id="map" class="h-full w-full"></div>
+      <div id="map2" class="h-full w-full"></div>
+      <div
+        class="flex flex-col gap-4 max-md:p-8 p-16 bg-primary items-center justify-center text-white max-w-2xl mx-auto"
+      >
+        <h1 class="text-center font-extrabold text-9xl">Waitakere Clinic</h1>
+        <h2 class="text-center text-4xl">{config.waitakereAddress}</h2>
+      </div>
     </div>
   </section>
   <section id="fees" class="py-16 px-4 flex flex-col gap-16">
@@ -444,4 +451,17 @@ import config from "@data/config.json";
     attribution:
       '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
+
+  // @ts-ignore
+  var map2 = L.map("map2").setView([-36.84087667028481, 174.4837118690231], 18);
+  // @ts-ignore
+  L.marker([-36.84087667028481, 174.4837118690231]).addTo(map2);
+
+  // @ts-ignore
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    minZoom: 16,
+    attribution:
+      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map2);
 </script>
