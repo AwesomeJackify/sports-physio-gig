@@ -68,7 +68,7 @@
   ],
   "services": [
     {
-      "name": "Sports Physio",
+      "name": "Physiotherapy",
       "description": "Providing comprehensive, effective and accurate Physiotherapy assessment and treatment for all clients regardless of age or level of sporting achievement."
     },
     {
@@ -95,14 +95,14 @@
         {
           "appointmentType": "Initial Appointment",
           "duration": "60 minutes",
-          "fullRate": "$70",
-          "discountedRate": "$45"
+          "fullRate": "$90",
+          "discountedRate": "$70"
         },
         {
           "appointmentType": "Follow up Appointment",
           "duration": "30 minutes",
-          "fullRate": "$45",
-          "discountedRate": "$30"
+          "fullRate": "$60",
+          "discountedRate": "$45"
         }
       ]
     },
@@ -112,14 +112,14 @@
         {
           "appointmentType": "Initial Appointment",
           "duration": "60 minutes",
-          "fullRate": "$125",
-          "discountedRate": "$90"
+          "fullRate": "$150",
+          "discountedRate": "$120"
         },
         {
           "appointmentType": "Follow up Appointment",
           "duration": "30 minutes",
-          "fullRate": "$75",
-          "discountedRate": "$65"
+          "fullRate": "$100",
+          "discountedRate": "$85"
         }
       ]
     }
