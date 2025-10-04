@@ -69,23 +69,23 @@
   "services": [
     {
       "name": "Physiotherapy",
-      "description": "Providing comprehensive, effective and accurate Physiotherapy assessment and treatment for all clients regardless of age or level of sporting achievement."
+      "description": "With over 25 years of clinical experience, Tanya provides expert care for people of all ages. Physiotherapy sessions cover musculoskeletal and sports injuries, injury prevention, pre- and post-surgical support, chronic pain management, tailored exercise prescription, manual therapy, dry needling, and Pilates-based rehabilitation."
     },
     {
-      "name": "Sports Rehabilitation",
-      "description": "Sport rehabilitation focuses on understanding, preventing and treating sports and exercise-related injuries and musculoskeletal conditions."
+      "name": "Sports Physiotherapy",
+      "description": "Tanya is an experienced sports event and team physio and medic, passionate about athlete welfare, injury prevention, and education. She brings elite-level expertise from professional rugby and Olympic sport, is a World Rugby Medical Educator, and delivers workshops for teams and organisations. Get in touch to book support for your team or event."
+    },
+    {
+      "name": "ACC Provider",
+      "description": "We are an ACC-registered and Southern Cross Easy Claim provider, also working with Careway, private patients, and other insurers. Self-referrals are welcome, no doctor's referral is required, and ACC claims can be lodged directly for eligible injuries."
     },
     {
       "name": "Pilates",
-      "description": "Pilates is an incredible tool for pain relief, injury prevention, rehabilitation, strengthening, flexibility, core, posture, symmetry, muscle balance and performance."
-    },
-    {
-      "name": "ACC Registered Clinic",
-      "description": "Most Sports and musculoskeletal injuries when caused accidentally are covered by ACC insurance legislation in NZ."
+      "description": "Physio-led Pilates is evidence-informed and highly effective for rehabilitation, pain management, injury prevention, and performance in both sport and daily life. It can be included as part of your physio rehab or enjoyed in small group classes."
     },
     {
       "name": "Physio Massage",
-      "description": "Massage can be really helpful to help you feel better, recover, gain mobility, keep training and performing. Massage from super experienced Physiotherapist Tanya the Magic Hands is awesome! Physio massage is even better and can include Assessment, Remedial advice /exercises, and adjuncts such as Joint mobilisation, Stretching, Dry Needling or Pilates if indicated. To be honest, if you just want passive massage I'm not the right person to book in with!"
+      "description": "Massage with Tanya is designed to help you recover, improve mobility, and keep performing at your best. With her extensive physiotherapy expertise, treatments may also include assessment, remedial advice, joint mobilisation, stretching, dry needling, or Pilates if needed. If you're simply after a passive massage, this may not be the right service — but if you want expert physio hands with real impact, you'll be in good care."
     }
   ],
   "fees": [
