@@ -30,32 +30,6 @@ import config from "@data/config.json";
 ---
 
 <Layout title={config.businessName}>
-  <!-- <div
-    role="alert"
-    class="alert alert-success absolute top-1 left-2 z-50 w-fit"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      class="h-6 w-6 shrink-0 stroke-current"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-    </svg>
-    <span class="text-xs">
-      limited availability with experienced Physio Tanya Browne — <a
-        href="/book"
-        class="link">Book Online</a
-      > now!<br />
-      Can't find a time? Call <a href="tel:0274990539" class="link"
-        >027 499 0539</a
-      >
-    </span>
-  </div> -->
   <section class="h-screen w-full relative overflow-hidden z-10">
     <div
       class="flex flex-col w-full items-center absolute top-1/2 -translate-y-[50%] gap-16 left-1/2 -translate-x-1/2 z-30"
@@ -80,7 +54,6 @@ import config from "@data/config.json";
       <div class="flex gap-8">
         <a
           href={config.bookingLink}
-          target="_blank"
           class="btn btn-primary font-extrabold btn-lg">Book Now</a
         >
         <a href="#contact" class="btn btn-secondary font-extrabold btn-lg"
@@ -128,17 +101,6 @@ import config from "@data/config.json";
             />
           </div>
         </div>
-        <span class="text-xs text-base-100">
-          Limited availability with experienced Physio Tanya Browne — <a
-            href="/book"
-            class="link link-secondary">Book Online</a
-          > now!<br />
-          Can't find a time? Call <a
-            href="tel:0274990539"
-            class="link link-secondary">027 499 0539</a
-          >
-        </span>
-
         <p
           class="italic text-xl font-light text-secondary max-w-2xl whitespace-pre-line"
         >
@@ -147,22 +109,42 @@ import config from "@data/config.json";
       </div>
 
       <div
-        class="grid grid-cols-2 grid-rows-2 max-md:flex max-md:flex-col gap-8 place-items-center"
+        class="grid grid-cols-2 grid-rows-1 max-md:flex max-md:flex-col gap-8 place-items-center max-w-screen-lg mx-auto"
       >
-        <p class="text-white font-light">{config.description1}</p>
-        <Image
-          src={tanya1Img}
-          alt="tanya"
-          class="rounded-2xl w-96 border-[16px] border-secondary max-md:row-start-1"
-        />
-        <Image
-          src={tanya2Img}
-          alt="tanya"
-          class="rounded-2xl w-96 border-[16px] border-secondary"
-        />
-        <p class="text-white font-light text-right max-md:text-left">
-          {config.description2}
-        </p>
+        <div class="text-white font-light text-lg">
+          <p>
+            Due to full time Clinical advisor career commitments Physiotherapy
+            Appointment availability is limited and by direct arrangement only
+            outside of contracted hours.
+          </p>
+          <br />
+          <p>
+            Please contact Tanya Browne directly to discuss your Physiotherapy
+            needs.<br />
+            Mobile: <a href="tel:0274990539">027 499 0539</a><br />
+            Email: <a href="mailto:tanya.browne42@gmail.com"
+              >tanya.browne42@gmail.com</a
+            >
+          </p>
+          <br />
+          <p>
+            With over 25 years plus experience I am happy to still offer
+            excellent Physiotherapy services at my Waitakere Clinic and via
+            Telehealth/Online services.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <Image
+            src={tanya1Img}
+            alt="tanya"
+            class="rounded-2xl w-full border-[16px] border-secondary max-md:row-start-1"
+          />
+          <Image
+            src={tanya2Img}
+            alt="tanya"
+            class="rounded-2xl w-full border-[16px] border-secondary"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -254,7 +236,6 @@ import config from "@data/config.json";
             </div>
             <a
               href={config.bookingLink}
-              target="_blank"
               class="btn btn-primary font-extrabold btn-lg"
             >
               Book Now
@@ -438,7 +419,7 @@ import config from "@data/config.json";
           end: "top center",
           scrub: true,
         },
-      }
+      },
     )
     .fromTo(
       "#basketball",
@@ -451,7 +432,7 @@ import config from "@data/config.json";
           end: "bottom center",
           scrub: true,
         },
-      }
+      },
     )
     .fromTo(
       "#basketballPattern",
@@ -465,7 +446,7 @@ import config from "@data/config.json";
           scrub: true,
         },
       },
-      "0"
+      "0",
     );
 
   /**
